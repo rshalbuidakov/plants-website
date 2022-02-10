@@ -103,7 +103,7 @@ const iconTheme = 'ri-sun-line';
 const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
-const getCurrentTime = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
 const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
 
 if (selectedTheme) {
